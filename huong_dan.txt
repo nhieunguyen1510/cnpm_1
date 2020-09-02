@@ -1,0 +1,3 @@
+Chay cac lenh sau de khoi dong ung dung
+npm install
+npm start

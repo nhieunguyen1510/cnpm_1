@@ -1,0 +1,16 @@
+{
+    "Ho_ten": "Nguyên văn bé Xíu",
+    "Ma_so": "NV_3",
+    "Ten_Dang_nhap": "NV_3",
+    "Mat_khau": "NV_3",
+    "Danh_sach_Nhom_Tivi": [
+      {
+        "Ten": "Samsung",
+        "Ma_so": "SAMSUNG"
+      },
+      {
+        "Ten": "Khác",
+        "Ma_so": "KHAC"
+      }
+    ]
+  }
