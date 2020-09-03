@@ -1,0 +1,26 @@
+<%- include('partials/header'); %>
+  <section class="container m-auto p-4">
+    <div class="px-4 mb-4">
+      <h2 class="text-2xl text-white font-bold mb-6">Giỏ hàng</h2>
+    </div>
+    <article class="w-1/3 px-6">
+      <div class="bg-white rounded-lg mt-5 py-4">
+        <img src="/Media/<%= tivi.Ma_so %>.png" class="h-40 rounded-md mx-auto" alt="<%= tivi.Ma_so %>" />
+      </div>
+      <div class="bg-white shadow-lg rounded-lg -mt-4">
+        <div class="py-5 px-5">
+          <h2 class="font-bold text-gray-800 text-lg"><%= tivi.Ten %></h2>
+          <div class="flex items-center justify-between mb-4">
+            <div class="text-2xl text-red-600 font-bold">
+              <%= tivi.Don_gia_Ban.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") %> vnd
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <div class="mt-6 px-4 text-right">
+      <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="/">Thanh toán</a>
+    </div>
+  </section>
+</body>
+</html>

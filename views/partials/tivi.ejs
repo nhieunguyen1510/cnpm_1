@@ -10,9 +10,9 @@
           <%= tivi.Don_gia_Ban.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") %> vnd
         </div>
       </div>
-      <button class="px-6 py-2 transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none">
+      <a href="/cart?id=<%= tivi.Ma_so %>" class="inline-block px-6 py-2 transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 hover:text-white border-2 border-gray-900 focus:outline-none">
         Thêm vào giỏ hàng
-      </button>
+      </a>
     </div>
   </div>
 </article>

@@ -20,7 +20,6 @@ const getTiviList = () => {
         const jsonData = JSON.parse(text);
         data.push(jsonData);
       });
-      console.log(resolve);
       resolve(data);
     });
   });

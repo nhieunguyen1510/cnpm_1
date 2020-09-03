@@ -1,19 +1,14 @@
 const databaseService = require('./database.service');
 
 const find = ({
-  tiviName,
-  tiviGroupName
+  id,
+  // tiviName,
+  // tiviGroupName
 }) => {
   return databaseService.getTiviList()
     .then(tivis => {
-      const result = tivis.filter(tivi => {
-        if (tiviName !== undefined && tivi.Ten.indexOf(tiviName) !== -1) {
-          return true;
-        }
-        if (tiviGroupName !== undefined && tivi.Ten.indexOf(tiviGroupName) !== -1) {
-          return true;
-        }
-        return false;
+      const result = tivis.find(tivi => {
+        return tivi.Ma_so === id;
       });
       return result;
     });
