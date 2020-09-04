@@ -4,14 +4,21 @@ const tiviService = require('../services/tivi.service');
 
 router.get('/', (req, res) => {
   const id = req.query.id;
-  tiviService.find({
-    id
-  }).then(tivi => {
+  if (id) {
     res.render('cart', {
       url: req.originalUrl,
-      tivi,
+      tivi: null,
     });
-  });
+  } else {
+    tiviService.find({
+      id
+    }).then(tivi => {
+      res.render('cart', {
+        url: req.originalUrl,
+        tivi,
+      });
+    });
+  }
 })
 
 module.exports = router;
